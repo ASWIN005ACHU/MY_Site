@@ -1,0 +1,27 @@
+.NavBar {
+        height: 100px;
+        width: 100%;
+        background: black;
+        color: #fff;
+    }
+
+.NavBar > h1 {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.NavBar > button {
+    position: absolute;
+    top: 4%;
+    left: 80%;
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+    background: white;
+}
+
+.NavBar > img {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
