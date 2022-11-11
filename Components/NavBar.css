@@ -1,27 +1,170 @@
-.NavBar {
-        height: 100px;
+   .NavBar {
+       height: 100px;
+       width: 100%;
+       background: #40FF17;
+       color: #fff;
+       transition: 0.4s;
+       box-shadow: 2px 2px 7px black;
+       box-shadow: -2px 2px 7px black;
+   }
+
+   .NavBarDark {
+       height: 100px;
+       width: 100%;
+       background: black;
+       color: #fff;
+       transition: 0.4s;
+       box-shadow: 2px 2px 7px black;
+       box-shadow: -2px 2px 7px black;
+   }
+
+   .NavBar > .title {
+       color: rgb(0, 0, 0);
+       position: absolute;
+       top: 5%;
+       left: 10%;
+       transition: 0.4s;
+   }
+   
+   .NavBarDark > .title {
+       color: white;
+       position: absolute;
+       top: 5%;
+       left: 10%;
+       transition: 0.4s;
+   }
+
+   .resume {
+       position: absolute;
+       top: -55px;
+       left: 75%;
+       padding: 15px 25px 15px 25px;
+       border-radius: 15px;
+       background: white;
+       border: none;
+       transition: 0.4s;
+    }
+
+   img {
+       height: 50px;
+       width: 60px;
+       position: absolute;
+       top: 4%;
+       left: 3%;
+   }
+
+   .switch {
+       position: absolute;
+       top: 5%;
+       left: 90%;
+       width: 60px;
+       height: 35px;
+       border-radius: 15px;
+   }
+   
+   .switch>input {
+       opacity: 0;
+       height: 0%;
+       width: 0%;
+   }
+
+   .slider {
+       position: absolute;
+       cursor: pointer;
+
+       top: -130%;
+       left: 0%;
+       bottom: 130%;
+       right: 0%;
+
+       border-radius: 15px;
+       background-color: black;
+   }
+
+   .slider::before {
+       position: absolute;
+       content: "";
+       height: 26px;
+       width: 26px;
+       bottom: 4px;
+       left: 5px;
+       background-color: white;
+       border-radius: 15px;
+       transition: 0.4s;
+   }
+   
+   input:checked+.slider::before {
+       transform: translateX(20px);
+       background-color: black;
+       position: absolute;
+       bottom: 3px;
+    }
+    
+    input:checked+.slider {
+        background-color: white;
+       border: 2px solid white;
+   }
+   
+   @media (max-width:700px){
+    .resume {
+        position: absolute;
+        top: 30px;
+        left: 69%;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    .slider::before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        bottom: 4px;
+        left: 5px;
+        background-color: white;
+        border-radius: 15px;
+        transition: 0.4s;
+    }
+    .switch {
+        position: absolute;
+        top: 70px;
+        left: 91%;
+        width: 50px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    .title {
+        font-size: 30px;
+        position: absolute;
+        top: 40%;
+        left: -15px;
+        transition: 0.4s;
+        margin-top: 5px;
+    }
+    img {
+        height: 45px;
+        width: 50px;
+        position: absolute;
+        top: 0%;
+        left: 3%;
+    }
+    .NavBar {
+        height: 80px;
+        width: 100%;
+        background: #40FF17;
+        color: #fff;
+        transition: 0.4s;
+        box-shadow: 2px 2px 7px black;
+        box-shadow: -2px 2px 7px black;
+    }
+ 
+    .NavBarDark {
+        height: 80px;
         width: 100%;
         background: black;
         color: #fff;
+        transition: 0.4s;
+        box-shadow: 2px 2px 7px black;
+        box-shadow: -2px 2px 7px black;
     }
-
-.NavBar > h1 {
-    position: absolute;
-    top: 5%;
-    left: 10%;
-}
-
-.NavBar > button {
-    position: absolute;
-    top: 4%;
-    left: 80%;
-    padding: 15px 25px 15px 25px;
-    border-radius: 15px;
-    background: white;
-}
-
-.NavBar > img {
-    position: absolute;
-    top: 4%;
-    left: 3%;
 }
