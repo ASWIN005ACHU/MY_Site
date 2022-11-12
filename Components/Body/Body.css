@@ -1,0 +1,128 @@
+.react {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    position: relative;
+    top: 50px;
+    animation: react 2.2s ease-in-out infinite both;
+    animation: react 2.2s ease-in-out infinite both;
+}
+
+.mongo {
+    position: absolute;
+    left: -70px;
+    width: 150%;
+    height: auto;
+    mix-blend-mode: darken;
+    opacity: 0.7;
+    animation: Mongo 5s ease-in-out infinite both;
+    animation: Mongo 5s ease-in-out infinite both;
+}
+
+.node {
+    width: 80%;
+    height: auto;
+    opacity: 0.7;
+    mix-blend-mode: darken;
+    animation: node 5s ease-in-out infinite both;
+    animation: node 5s ease-in-out infinite both;
+}
+
+.txt {
+    margin-top: -200px;
+    margin-left: 50px;
+}
+
+.text {
+    margin-left: 150px;
+}
+
+.section2{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 114, 220);
+    color: #fff;
+    transition: 0.4s;
+}
+
+.section2Dark{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    transition: 0.4s;
+}
+
+/* small screen Size */
+@media screen and (max-width:700px) {
+    .txt {
+        position: absolute;
+        top: 180px;
+        margin-top: -200px;
+        margin-left: 50px;
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 20px;
+        margin-left: 150px;
+    }
+}
+
+
+/* Animations */
+
+/* react Animation */
+@keyframes react {
+    0% {
+        transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Mongo Animation */
+@keyframes Mongo {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* node Animation */
+@keyframes node {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* typing Animation */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
