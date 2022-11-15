@@ -45,9 +45,9 @@ function Body(props) {
                                 <div className="links col-10 ml-5 pl-5">
                                     <a href="https://github.com/" className='github'><img src={github} className="github"/></a>
                                     <br />
-                                    <a href="https://github.com/" className='Linkedin'><img src={Linkedin} className="Linkedin"/></a>
+                                    <a href="https://www.linkedin.com/" className='Linkedin'><img src={Linkedin} className="Linkedin"/></a>
                                     <br />
-                                    <a href="https://github.com/" className='insta'><img src={instagram} className="insta"/></a>
+                                    <a href="https://www.instagram.com/" className='insta'><img src={instagram} className="insta"/></a>
                                     <br />
                                 </div>
                             </div>
