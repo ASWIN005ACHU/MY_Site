@@ -37,20 +37,199 @@
     margin-left: 150px;
 }
 
-.section2{
+.section2 {
     width: 100%;
     height: auto;
     background-color: rgb(0, 114, 220);
     color: #fff;
     transition: 0.4s;
+    box-shadow: 0px -4px 5px #000;
 }
 
-.section2Dark{
+.section2Dark {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: rgb(0, 0, 0);
     color: #fff;
     transition: 0.4s;
+    box-shadow: 0px -4px 5px #000;
+}
+
+.links {
+    position: inherit;
+    top: 40px;
+    left: 25%;
+    width: fit-content;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5% 5% 10% 5%;
+    padding-right: 50px;
+}
+
+.github {
+    margin: 0px 10px 0px 10px;
+    mix-blend-mode: darken;
+    height: 70px;
+    width: auto;
+}
+
+.Linkedin {
+    margin: 2px 10px 0px 10px;
+    mix-blend-mode: darken;
+    height: 65px;
+    width: auto;
+}
+
+.insta {
+    margin: 4px 10px 0px 10px;
+    mix-blend-mode: darken;
+    height: 55px;
+    width: auto;
+}
+
+/* mobile large */
+@media screen and (max-width:425px) {
+    .section2 {
+        width: 800px;
+        height: 600px;
+        background-color: rgb(0, 114, 220);
+        color: #fff;
+        transition: 0.4s;
+        box-shadow: 0px -4px 5px #000;
+    }
+
+    .section2Dark {
+        width: 800px;
+        height: 600px;
+        background-color: rgb(0, 114, 220);
+        color: #fff;
+        transition: 0.4s;
+        box-shadow: 0px -4px 5px #000;
+    }
+
+    .links {
+        position: absolute;
+        top: 400px;
+        width: 200px;
+    }
+
+    .github {
+        margin: 0px 10px 0px 10px;
+        mix-blend-mode: darken;
+        height: 50px;
+        width: auto;
+    }
+    
+    .Linkedin {
+        margin: 3px 10px 0px 60px;
+        mix-blend-mode: darken;
+        height: 45px;
+        width: auto;
+    }
+    
+    .insta {
+        margin: 8px 10px 0px 110px;
+        mix-blend-mode: darken;
+        height: 35px;
+        width: auto;
+    }
+}
+
+/* mobile medium */
+@media screen and (max-width:375px) {
+    .section2 {
+        width: 800px;
+        height: 600px;
+        background-color: rgb(0, 114, 220);
+        color: #fff;
+        transition: 0.4s;
+        box-shadow: 0px -4px 5px #000;
+    }
+
+    .section2Dark {
+        width: 800px;
+        height: 600px;
+        background-color: rgb(0, 114, 220);
+        color: #fff;
+        transition: 0.4s;
+        box-shadow: 0px -4px 5px #000;
+    }
+
+    .links {
+        position: absolute;
+        top: 440px;
+        width: 200px;
+    }
+
+    .github {
+        margin: 0px 10px 0px 10px;
+        mix-blend-mode: darken;
+        height: 50px;
+        width: auto;
+    }
+    
+    .Linkedin {
+        margin: 3px 10px 0px 60px;
+        mix-blend-mode: darken;
+        height: 45px;
+        width: auto;
+    }
+    
+    .insta {
+        margin: 8px 10px 0px 110px;
+        mix-blend-mode: darken;
+        height: 35px;
+        width: auto;
+    }
+}
+
+/* mobile small */
+@media screen and (max-width:320px) {
+    .section2 {
+        width: 800px;
+        height: 700px;
+        background-color: rgb(0, 114, 220);
+        color: #fff;
+        transition: 0.4s;
+        box-shadow: 0px -4px 5px #000;
+    }
+
+    .section2Dark {
+        width: 800px;
+        height: 700px;
+        background-color: rgb(0, 114, 220);
+        color: #fff;
+        transition: 0.4s;
+        box-shadow: 0px -4px 5px #000;
+    }
+
+    .links {
+        position: absolute;
+        top: 560px;
+        width: 180px;
+    }
+
+    .github {
+        margin: 0px 10px 0px 10px;
+        mix-blend-mode: darken;
+        height: 50px;
+        width: auto;
+    }
+    
+    .Linkedin {
+        margin: 3px 10px 0px 60px;
+        mix-blend-mode: darken;
+        height: 45px;
+        width: auto;
+    }
+    
+    .insta {
+        margin: 8px 10px 0px 110px;
+        mix-blend-mode: darken;
+        height: 35px;
+        width: auto;
+    }
 }
 
 /* small screen Size */
@@ -62,10 +241,28 @@
         margin-left: 50px;
         font-size: 30px;
     }
-
+    
     .text {
         font-size: 20px;
         margin-left: 150px;
+    }
+}
+
+/* 4k display */
+@media screen and (min-width:1441px) {
+    .section2{
+        height: 630px;
+    }
+    .aboutme{
+
+        margin-left: 400px;
+    }
+}
+
+/* tablet mode */
+@media screen and (max-width:768px) {
+    .links {
+        left: 30px;
     }
 }
 

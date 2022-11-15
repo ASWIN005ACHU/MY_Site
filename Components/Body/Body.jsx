@@ -2,10 +2,15 @@ import React from 'react'
 import Reactimage from '../../Pictures/ReactLogo.png'
 import Mongoimage from '../../Pictures/MongodbLogo.jpg'
 import Nodeimage from '../../Pictures/NodehsLogo.png'
+import github from '../../Pictures/GitHub-Mark.png'
+import Linkedin from '../../Pictures/LinkedInLogo.jpg'
+import instagram from '../../Pictures/instagram.png'
 import './Body.css'
+import { useHref } from 'react-router-dom'
 
 function Body(props) {
     let togglemode = props.DarkMode ? "Dark" : "";
+    let about = "My name is Aswinraj.I am 17 years old.Over 3 years of strong experience as Full Stack web developer with solid understanding of front - end technologies, MVC frameworks, Restful web services and Data Base designing. Strong knowledge in MERN Stack with vast experience in building Web Applications, used React. js for client side, Node."
     return (
         <>
             <section>
@@ -35,8 +40,16 @@ function Body(props) {
                     <div className="row">
                         <div className={`section2${togglemode}`}>
                             <div className="col-10 ml-5 mr-2 mt-5 pl-2 pr-2">
-                                <h4 style={{marginLeft:30}} className='ml-5 pl-5 pr-5 mr-5'>My Name Is ASWINRAJ</h4>
-                                <p  style={{marginLeft:30}} className='mt-3 ml-5 pl-5 pr-5 mr-5'>Hey i am Aswinraj.I am 17 years old.I'm a MERN STACK DEVELOPER.I've 2 years of coding exprirence.my city is Kerala,Palakkad,Alathur.I have some project in my <a>GitHub</a></p>
+                                <h4 className='aboutme pr-5 mr-5'>My Name Is ASWINRAJ</h4>
+                                <p  className='aboutme mt-3 pr-5 mr-5'>{about}</p>
+                                <div className="links col-10 ml-5 pl-5">
+                                    <a href="https://github.com/" className='github'><img src={github} className="github"/></a>
+                                    <br />
+                                    <a href="https://github.com/" className='Linkedin'><img src={Linkedin} className="Linkedin"/></a>
+                                    <br />
+                                    <a href="https://github.com/" className='insta'><img src={instagram} className="insta"/></a>
+                                    <br />
+                                </div>
                             </div>
                         </div>
                     </div>
